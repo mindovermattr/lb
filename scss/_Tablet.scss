@@ -1,0 +1,43 @@
+@media (max-width: $tablet-width) {
+  .container {
+    max-width: 736px;
+  }
+
+  .offers {
+    padding-top: 20px;
+    &__cards {
+      gap: 20px;
+    }
+    &__item {
+      padding: 59px 39px;
+      background-position: center;
+      background-size: cover;
+    }
+    &__description {
+      white-space: nowrap;
+    }
+  }
+
+  .features {
+    &__cards {
+      gap: 16px;
+    }
+  }
+
+  .advantages {
+    &__list {
+      flex-direction: column;
+      max-width: 360px;
+    }
+  }
+
+  .feedback {
+    background-position: 20% 50%;
+    &__container {
+      flex-direction: column;
+      gap: 48px;
+
+      padding-bottom: 140px;
+    }
+  }
+}

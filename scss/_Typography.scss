@@ -1,0 +1,16 @@
+.text {
+  font-size: 32px;
+  &--big {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  &--pink {
+    color: $pink-color;
+  }
+  &--lg {
+    font-size: 32px;
+  }
+  &--bold {
+    font-weight: 700;
+  }
+}
