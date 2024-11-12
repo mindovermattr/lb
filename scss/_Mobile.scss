@@ -43,6 +43,9 @@
     &__item--full {
       grid-column: 1;
     }
+    &__item {
+      justify-content: center;
+    }
   }
 
   .feedback {

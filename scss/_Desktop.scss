@@ -14,6 +14,7 @@ body {
 
 .header {
   background-color: $header-color;
+  position: relative;
 
   &__list {
     display: flex;
@@ -24,6 +25,55 @@ body {
     display: flex;
     gap: 41px;
     align-items: center;
+  }
+}
+
+.menu {
+  display: none;
+
+  position: absolute;
+  top: 74px;
+  right: 0;
+  background-color: #fff;
+  padding: 16px 16px 128px 34px;
+  width: 232px;
+
+  box-shadow: 2px 0px 10px 1px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.5s;
+
+  flex-direction: column;
+  gap: 9px;
+  z-index: 1;
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &__button {
+    align-self: flex-end;
+  }
+  &--active {
+    display: flex;
+  }
+}
+
+.links {
+  margin-top: 10px;
+  &:nth-of-type(-n + 1) {
+    margin-top: 15px;
+  }
+  &__title {
+    font-size: 14px;
+  }
+  &__item {
+    padding-left: 22px;
+  }
+  &__list {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
   }
 }
 
@@ -75,6 +125,9 @@ body {
       height: 100%;
     }
   }
+  &__text {
+    white-space: nowrap;
+  }
 }
 
 //
@@ -88,26 +141,28 @@ body {
     gap: 30px;
   }
   &__item {
-    padding: 105px 103px;
+    padding: 104px 103px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
+    background-size: cover;
+    background-position: center;
     gap: 4px;
     &--1 {
-      background-image: url("../img/offers-desk-1.jpg");
+      background-image: url("./img/offers-desk-1.jpg");
       background-repeat: no-repeat;
     }
     &--2 {
-      background-image: url("../img/offers-desk-2.jpg");
+      background-image: url("./img/offers-desk-2.jpg");
       background-repeat: no-repeat;
     }
     &--3 {
-      background-image: url("../img/offers-desk-3.jpg");
+      background-image: url("./img/offers-desk-3.jpg");
       background-repeat: no-repeat;
     }
     &--4 {
-      background-image: url("../img/offers-desk-4.jpg");
+      background-image: url("./img/offers-desk-4.jpg");
       background-repeat: no-repeat;
       padding: 0;
     }
@@ -115,6 +170,7 @@ body {
       grid-column: 1/4;
       background-position-y: center;
       background-position-x: center;
+      justify-content: center;
     }
   }
   &__title {
@@ -125,6 +181,7 @@ body {
   &__description {
     font-size: 24px;
     font-weight: 700;
+    white-space: nowrap;
   }
 }
 
@@ -170,12 +227,12 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 25px;
   &__content {
-    padding: 18px;
+    padding: 0 28px 18px 18px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 12px;
   }
   &__title {
     font-size: 13px;
@@ -185,6 +242,7 @@ body {
     font-weight: 300;
   }
   &__price {
+    margin-top: 6px;
     font-size: 16px;
   }
   &__image {
@@ -259,9 +317,10 @@ body {
 //
 .feedback {
   padding: 97px 0;
-  background-image: url("../img/form-bg.png");
+  background-image: url("./img/form-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -340,9 +399,12 @@ body {
     cursor: pointer;
     &:hover {
       background-color: $pink-color;
-      & > svg > path {
+      & > a > svg > path {
         fill: white;
       }
+    }
+    & > a > svg > path {
+      transition: fill 0.5s;
     }
   }
 }
