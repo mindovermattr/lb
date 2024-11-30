@@ -1,0 +1,80 @@
+.presentation {
+  background-color: $about-us-bg-color;
+  padding: 60px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__breadcrumb {
+    display: flex;
+    gap: 4px;
+  }
+  &__title {
+    font-size: 24px;
+  }
+}
+
+.breadcrumb {
+  &__item {
+    font-size: 14px;
+    color: $gray-color;
+    &--selected {
+      color: $pink-color;
+      font-weight: 700;
+    }
+  }
+}
+
+.controls {
+  display: flex;
+  gap: 30%;
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-weight: 600;
+  }
+  &__filter {
+    &-icon {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.sort {
+  display: flex;
+  gap: 28px;
+
+  &__options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $gray-color-secondary;
+    font-size: 14px;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  gap: 16px;
+  padding: 15px 16px;
+  border: 1px solid #ebebeb;
+  &__button {
+    height: 14px;
+  }
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__item {
+    color: #c4c4c4;
+    font-weight: 300;
+    &--selected {
+      color: $pink-color;
+    }
+  }
+}

@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="container container--header">
         <ul class="header__left">
@@ -23,7 +22,13 @@
         <ul class="header__list list">
           <li class="list__item list__item--menu">
             <button>
-              <img width="32" height="32" class="list__image" src="./img/icons/Menu.svg" alt="" />
+              <img
+                width="32"
+                height="32"
+                class="list__image"
+                src="./img/icons/Menu.svg"
+                alt="Картинка меню"
+              />
             </button>
           </li>
           <li class="list__item">
@@ -93,50 +98,44 @@
       </section>
     </header>
     <main>
-      <!-- About-us -->
-      <section class="about-us">
-        <div class="about-us__wrapper container">
-          <img class="about-us__image" src="./img/about-us-desktop.png" alt="" />
-
-          <h1 class="about-us__title">
-            <span class="text text--big">THE BRAND </span>
-            <span class="text about-us__text text--lg text--bold"
-              >OF LUXERIOUS
-              <span class="text text--pink">FASHION </span>
-            </span>
-          </h1>
+      <!-- presentation -->
+      <section class="presentation">
+        <div class="container container--catalog presentation__container">
+          <h1 class="text text--pink presentation__title">NEW ARRIVALS</h1>
+          <ol class="presentation__breadcrumb breadcrumb">
+            <li class="breadcrumb__item"><a href="./index.html">HOME /</a></li>
+            <li class="breadcrumb__item"><a href="#!">MEN /</a></li>
+            <li class="breadcrumb__item breadcrumb__item--selected">
+              <a href="#!">NEW ARRIVALS</a>
+            </li>
+          </ol>
         </div>
       </section>
 
-      <!-- Offers -->
-      <div class="offers container">
-        <ul class="offers__cards">
-          <li class="offers__item offers__item--1">
-            <h3 class="offers__title">30% off</h3>
-            <p class="offers__description text text--pink">FOR WOMAN</p>
-          </li>
-          <li class="offers__item offers__item--2">
-            <h3 class="offers__title">HOT DEAL</h3>
-            <p class="offers__description text text--pink">FOR MEN</p>
-          </li>
-          <li class="offers__item offers__item--3">
-            <h3 class="offers__title">NEW ARRIVALS</h3>
-            <p class="offers__description text text--pink">FOR KIDS</p>
-          </li>
-          <li class="offers__item offers__item--4 offers__item--full">
-            <h3 class="offers__title">LUXIROUS & TRENDY</h3>
-            <p class="offers__description text text--pink">ACCESORIES</p>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Features  -->
-
-      <section class="features container">
-        <h3 class="features__title">Fetured Items</h3>
-        <p class="features__description">Shop for items based on what we featured in this week</p>
-        <div class="features__cards">
-          <article class="features__card card">
+      <section class="features container container--catalog features--catalog">
+        <div class="features__controls controls">
+          <button class="controls__button">
+            <span class="controls__filter-text">FILTER</span>
+            <img
+              class="controls__filter-icon"
+              src="./img/icons/filter-icon.svg"
+              alt="Иконка фильтрации"
+            />
+          </button>
+          <div class="controls__sort sort">
+            <button class="sort__options">
+              TRENDING NOW <img src="./img/icons/arrow-down-icon.svg" alt="Иконка стрелки вниз" />
+            </button>
+            <button class="sort__options">
+              SIZE <img src="./img/icons/arrow-down-icon.svg" alt="Иконка стрелки вниз" />
+            </button>
+            <button class="sort__options">
+              PRICE <img src="./img/icons/arrow-down-icon.svg" alt="Иконка стрелки вниз" />
+            </button>
+          </div>
+        </div>
+        <div class="features__cards features__cards--catalog">
+          <!-- <article class="features__card card">
             <div class="card__image-wrapper">
               <img class="card__image" src="./img/features-desk-1.jpg" alt="" />
               <button class="card__button">
@@ -155,7 +154,7 @@
           </article>
           <article class="features__card card">
             <div class="card__image-wrapper">
-              <img class="card__image" src="./img/features-desk-2.jpg" alt="" />
+              <img class="card__image" src="./img/catalog-img-1.jpg" alt="" />
               <button class="card__button">
                 <img width="26" height="24" src="./img/icons/Cart.svg" alt="" />
                 Add to cart
@@ -206,7 +205,7 @@
           </article>
           <article class="features__card card">
             <div class="card__image-wrapper">
-              <img class="card__image" src="./img/features-desk-5.jpg" alt="" />
+              <img class="card__image" src="./img/catalog-img-2.jpg" alt="" />
               <button class="card__button">
                 <img width="26" height="24" src="./img/icons/Cart.svg" alt="" />
                 Add to cart
@@ -223,7 +222,7 @@
           </article>
           <article class="features__card card">
             <div class="card__image-wrapper">
-              <img class="card__image" src="./img/features-desk-6.jpg" alt="" />
+              <img class="card__image" src="./img/catalog-img-3.jpg" alt="" />
               <button class="card__button">
                 <img width="26" height="24" src="./img/icons/Cart.svg" alt="" />
                 Add to cart
@@ -238,10 +237,75 @@
               <p class="card__price text text--pink">$52.00</p>
             </div>
           </article>
+          <article class="features__card card">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="./img/catalog-img-4.jpg" alt="" />
+              <button class="card__button">
+                <img width="26" height="24" src="./img/icons/Cart.svg" alt="" />
+                Add to cart
+              </button>
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">ELLERY X M'O CAPSULE</h4>
+              <p class="card__description">
+                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                Kym Ellery teams up with Moda Operandi.
+              </p>
+              <p class="card__price text text--pink">$52.00</p>
+            </div>
+          </article>
+          <article class="features__card card">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="./img/catalog-img-5.jpg" alt="" />
+              <button class="card__button">
+                <img width="26" height="24" src="./img/icons/Cart.svg" alt="" />
+                Add to cart
+              </button>
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">ELLERY X M'O CAPSULE</h4>
+              <p class="card__description">
+                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                Kym Ellery teams up with Moda Operandi.
+              </p>
+              <p class="card__price text text--pink">$52.00</p>
+            </div>
+          </article>
+          <article class="features__card card">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="./img/catalog-img-6.jpg" alt="" />
+              <button class="card__button">
+                <img width="26" height="24" src="./img/icons/Cart.svg" alt="" />
+                Add to cart
+              </button>
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">ELLERY X M'O CAPSULE</h4>
+              <p class="card__description">
+                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                Kym Ellery teams up with Moda Operandi.
+              </p>
+              <p class="card__price text text--pink">$52.00</p>
+            </div>
+          </article> -->
         </div>
-        <button class="button features__button button--outlined">Browse All Product</button>
+        <div class="features__pagination pagination">
+          <button class="pagination__button">
+            <img src="./img/icons/arrow-left-icon.svg" alt="Иконка стрелки влево" />
+          </button>
+          <ul class="pagination__list">
+            <li class="pagination__item pagination__item--selected"><a href="#">1</a></li>
+            <li class="pagination__item"><a href="#">2</a></li>
+            <li class="pagination__item"><a href="#">3</a></li>
+            <li class="pagination__item"><a href="#">4</a></li>
+            <li class="pagination__item"><a href="#">5</a></li>
+            <li class="pagination__item"><a href="#">6.....</a><a href="#">20</a></li>
+          </ul>
+          <button class="pagination__button">
+            <img src="./img/icons/arrow-right-icon.svg" alt="Иконка стрелки вправо" />
+          </button>
+        </div>
       </section>
-
       <!-- Advantages -->
       <div class="advantages">
         <ul class="advantages__list container">
@@ -307,7 +371,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer__container">
+      <div class="container footer__container container--catalog">
         <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
         <nav>
           <ul class="footer__list">
@@ -379,7 +443,6 @@
         </nav>
       </div>
     </footer>
-
     <script type="module" src="./js/script.mjs"></script>
   </body>
 </html>
