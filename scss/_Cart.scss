@@ -1,0 +1,131 @@
+.cart {
+  display: flex;
+  margin: 100px auto 130px;
+  gap: 128px;
+  &__products {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__form {
+    flex-grow: 1;
+  }
+}
+
+.product {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  box-shadow: 17px 19px 24px rgba($color: #000000, $alpha: 0.13);
+  &__information {
+    padding-top: 22px;
+  }
+  &__image {
+    height: 306px;
+  }
+  &__title {
+    font-size: 24px;
+    color: $header-color;
+    margin-bottom: 42px;
+  }
+  &__information {
+    max-width: 195px;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  &__text {
+    font-size: 22px;
+    color: #575757;
+    &--counter {
+      display: flex;
+      gap: 24px;
+    }
+  }
+  &__counter {
+    border: 1px solid #eaeaea;
+    color: #656565;
+    font-size: 18px;
+    padding: 0 16px;
+    width: 43px;
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+  &__button {
+    padding: 28px 22px 0 100px;
+  }
+}
+
+.products {
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    padding: 16px 40px;
+    border: 1px solid #a4a4a4;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+.form {
+  &__fieldset {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
+.fieldset {
+  &__button {
+    padding: 10px 14px;
+    border: 1px solid #a4a4a4;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__input {
+    border: 1px solid #a4a4a4;
+    width: 100%;
+    padding: 13px 0 16px 17px;
+  }
+}
+
+.summary {
+  margin-top: 57px;
+  padding: 39px 34px 42px 44px;
+  background-color: #f5f3f3;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: flex-end;
+  &__sub {
+    font-size: 14px;
+    color: #4a4a4a;
+  }
+  &__grand {
+    font-weight: 300;
+    font-size: 16px;
+    color: #222222;
+  }
+  &__button {
+    padding: 16px 40px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f16d7f;
+  }
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e2e2e2;
+}

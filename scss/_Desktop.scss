@@ -364,6 +364,9 @@ body {
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
     padding: 10px 60px 10px 22px;
+    &:user-invalid {
+      outline: 1px solid red;
+    }
   }
   &__button {
     background-color: $pink-color;
