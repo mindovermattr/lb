@@ -1,6 +1,9 @@
 @media (max-width: $mobile-width) {
   .container {
     max-width: 343px;
+    &--catalog {
+      max-width: 359px;
+    }
   }
 
   .about-us {
@@ -59,6 +62,37 @@
     &__container {
       flex-direction: column-reverse;
       gap: 40px;
+    }
+  }
+  // catalog
+  .controls {
+    gap: 60px;
+    &__button {
+      flex-shrink: 0;
+    }
+    &__filter {
+      &-text {
+        display: none;
+      }
+      &-icon {
+        width: 38px;
+        height: 25px;
+      }
+    }
+  }
+
+  .sort {
+    &__options {
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+
+  .presentation {
+    padding: 24px 0 48px;
+    &__container {
+      flex-direction: column;
+      gap: 32px;
     }
   }
 }

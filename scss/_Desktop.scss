@@ -191,13 +191,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 96px 0;
   &__cards {
     display: flex;
     flex-wrap: wrap;
     margin: 48px 0;
     gap: 30px;
+    &--catalog {
+      margin-top: 64px;
+    }
   }
   &__card {
     max-width: 360px;
@@ -221,6 +223,9 @@ body {
       background: $pink-color;
       color: white;
     }
+  }
+  &--catalog {
+    padding: 48px 0;
   }
 }
 
